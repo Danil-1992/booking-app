@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainPage {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 16px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.searchBox button {
+  padding: 16px 32px;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.searchBox button:hover {
+  background: #e55a2b;
+}
+
+.categories {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.category {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 16px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.categoryIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.category h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.category p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.advantages {
+  padding: 80px 0;
+  background: white;
+}
+
+.advantages h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+}
+
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.advantage {
+  text-align: center;
+  padding: 20px;
+}
+
+.advantageIcon {
+  width: 60px;
+  height: 60px;
+  background: #1e3c72;
+  color: white;
+  font-size: 30px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.advantage h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.advantage p {
+  color: #666;
+}
+
+.offers {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.offers h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.offersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.offerCard {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.offerCard:hover {
+  transform: translateY(-5px);
+}
+
+.offerBadge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #ff6b35;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.offerCard h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.offerCard p {
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.offerCard button {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.offerCard button:hover {
+  transform: translateX(5px);
+}
+
+.stats {
+  padding: 80px 0;
+  background: #1a1a1a;
+  color: white;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ff6b35;
+}
+
+.statLabel {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Консультация */
+.consultation {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  text-align: center;
+}
+
+.consultation h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.consultation p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.consultationButton {
+  background: white;
+  color: #f5576c;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.consultationButton:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .searchBox {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .categories h2,
+  .advantages h2,
+  .offers h2,
+  .consultation h2 {
+    font-size: 28px;
+  }
+  
+  .statNumber {
+    font-size: 32px;
+  }
+}
