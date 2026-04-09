@@ -15,7 +15,8 @@
 git clone https://github.com/Danil-1992/booking-app.git
 cd booking-app
 
-# 2. Запустите Docker
+# 2. Соберите JAR, после чего запустите Docker
+mvn clean package -DskipTests
 docker compose up -d --build
 
 # 3. Добавьте тестовые квартиры (обязательно!)
